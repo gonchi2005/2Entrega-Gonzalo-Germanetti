@@ -1,0 +1,51 @@
+.body{
+    background: linear-gradient(45deg, #050a90f1, rgb(238, 11, 11));
+}
+#contenedorProductos {
+    border: 3px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(auto,1fr);
+
+}
+
+.tarjetaProducto {
+    border: 1px solid black;
+    margin: 2px;
+
+}
+img {
+     height: 200px;
+     width: 100%;
+}
+
+.tarjetaProducto h3 {
+    background-color: blanchedalmond;
+ }
+
+#contenedorCarrito {
+    border: 2px solid black;
+    width: 100%;
+    min-height: 100px;
+}
+.tarjetaproducto{
+    border: 2px solid rgba(14, 1, 11, 0.472);
+} 
+.tarjetaProductoCarrito {
+    display: flex;
+    justify-content: space-between;
+}
+
+.unidades {
+    display: flex;
+}
+
+#hermosoEstilo {
+    height: 200px;
+    width: 200px;
+    border: 5px solid orangered;
+}
+
+.oculto {
+    display: none !important;
+}
