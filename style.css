@@ -1,5 +1,5 @@
 .body{
-    background: linear-gradient(45deg, #050a90f1, rgb(238, 11, 11));
+    background: linear-gradient(45deg, #101ddff1, rgb(218, 180, 180));
 }
 #contenedorProductos {
     border: 3px solid rgb(0, 0, 0);
@@ -47,5 +47,5 @@ img {
 }
 
 .oculto {
-    display: none !important;
+    display: none;
 }

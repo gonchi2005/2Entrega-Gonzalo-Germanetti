@@ -140,8 +140,7 @@ function renderizarCarrito() {
         let botonDecUnidad = document.getElementById("dec" + producto.id)
         botonDecUnidad.addEventListener("click", decrementarUnidad)
 
-       /*  let botonIncUnidad = document.getElementById("inc" + producto.id)
-        botonIncUnidad.addEventListener("click", incrementarUnidad) */
+  
 
         let botonEliminar = document.getElementById("eliminar" + producto.id)
         botonEliminar.addEventListener("click", eliminarProductoDelCarrito)
@@ -158,8 +157,7 @@ function decrementarUnidad(e) {
     localStorage.setItem("carrito", JSON.stringify(carrito))
     renderizarCarrito()
 
-    /* e.target.nextElementSibling.innerText-- 
-    console.dir(e.target.nextElementSibling) */
+
 }
 
 function eliminarProductoDelCarrito(e) {
@@ -169,36 +167,3 @@ function eliminarProductoDelCarrito(e) {
     localStorage.setItem("carrito", JSON.stringify(carrito))
     e.target.parentElement.remove()
 }
-
-/* let numeros = [1, 5, 2, 7, 2]
-console.log(Math.min(1, 5, 2, 7, 2))
-console.log(Math.min(...numeros))
-console.log(Math.min(numeros)) */
-
-
-/* let personasOriginal = ["Juan", "Maria", "Ana"]
-let personas = ["Laura", ...personasOriginal, "Mario"]
-personas.push("Pedro")
-console.log(personas)
-console.log(personasOriginal) */
-
-/* let persona = {
-    nombre: "Juan",
-    apellido: "Gomez",
-    edad: 20
-}
-
-let persona2 = {...persona, nombre: "Juli", dni: 123456}
-
-console.log(persona)
-console.log(persona2) */
-
-/* let listaNumeros = [1, 5, 3, 8, 11, 87, 3]
-
-function sumar(...numeros) {
-    console.log(numeros)
-    return numeros.reduce((acum, numero) => numero + acum, 0)
-}
-
-console.log(sumar(1, 5, 7, 3, 8))
-console.log(sumar(...listaNumeros)) */
